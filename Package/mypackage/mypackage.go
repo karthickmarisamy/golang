@@ -1,17 +1,15 @@
 package stuff
 
 import (
-	"fmt"
 	"strconv"
 )
 
-var Name := "Karthick"
+var Name string = "Karthick"
 
-func IntArrytoStrArry(iArry = []int)[]string{
-	sArry := []string{}
+func IntArrytoStrArry(iArry []int)[]string{
+	var sArry []string
 	for _, i := range iArry{
-		val := strconv.Itoa(i)
-		sArry.append(sArry, val)
+		sArry = append(sArry, strconv.Itoa(i))
 	}
 	return sArry;
 }
